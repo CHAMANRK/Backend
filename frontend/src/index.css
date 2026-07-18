@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.tool-card {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.15s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+}
+
+.tool-card h3 {
+  margin: 8px 0 4px;
+}
+
+.tool-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+button {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.result-box {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.result-box img {
+  max-width: 100%;
+  border-radius: 12px;
+}
