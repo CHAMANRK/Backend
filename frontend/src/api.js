@@ -1,6 +1,6 @@
 // Change this once your FastAPI backend is deployed on Render/Railway.
 // Example: "https://nano-tools-backend.onrender.com"
-export const API_BASE = "http://localhost:8000";
+export const API_BASE = "https://chaman-uxrh.onrender.com";
 
 export async function apiPost(path, formData) {
   const res = await fetch(`${API_BASE}${path}`, {
